@@ -69,12 +69,12 @@ for (int i = 0; i <= 21; i++){
 Console.SetCursorPosition(6, 5);
 Console.WriteLine("Digite salário mínimo vigente:");
 Console.SetCursorPosition(6, 6);
-salarioMinimo = Convert.ToDouble(Console.ReadLine());
+salarioMinimo = Convert.ToDouble(Console.ReadLine().Replace(",","."));
 
 Console.SetCursorPosition(6, 7);
 Console.WriteLine("Digite seu salário atual:");
 Console.SetCursorPosition(6, 8);
-salario = Convert.ToDouble(Console.ReadLine());
+salario = Convert.ToDouble(Console.ReadLine().Replace(",","."));
 
 qntSalario = salario/salarioMinimo;
 
